@@ -37,6 +37,8 @@ Reimagine something from a Stage 4 sketch as a living entity or an environment.
 
 Create a sketch that shows an unconventional representation of time. This 'clock' should be constantly changing, but its appearance can repeat in a subsequent cycle. It does not need to follow a 24-hour cycle (you can use any timescale). Give your sketch a unique title and edit the README file accordingly.
 
+i wanted to do a cyclic representation of the lifecycle of a star from conception (nebula) to destruction (supernova)
+
 **the cycle:**
 1. a nebula - which is a cloud of gases and dust that is being condensed by gravity
 2. main sequence star - otherwise known as supermassive  and has a stable core - it then expands and gets hotter - 90% of its life time
