@@ -6,6 +6,7 @@ let imgHeight;
 let spacing = 50;
 let totalWidth;
 let blackhole, mss, nebula, supermassive, supernova;
+let displayCounter = 0; // Counter to keep track of displayNextImage calls
 
 function preload() {
   blackhole = loadImage('images/blackhole.png');
@@ -21,21 +22,20 @@ function preload() {
   imgs.push(supernova);
 }
 
-countInterval = setInterval(drawStar, 2);
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  frameRate(1);
+  frameRate(3)
   background(22, 12, 41);
   imageMode(CENTER);
   
-  imgWidth = windowWidth / 6; // Set the width to 1/6th of the window width
-  imgHeight = imgWidth;
+  imgWidth = windowWidth / 6;  //width of each image in relation to window size
+  imgHeight = imgWidth; // craetes symetrical images
 
   displayNextImage();
 }
 
-function displayNextImage() {
+function displayNextImage() { //function to draw the five images in succession along the screen
   setTimeout(1)
   
   if (currentIndex >= imgs.length) {
@@ -51,16 +51,30 @@ function displayNextImage() {
   image(imgs[currentIndex], x, windowHeight / 2, imgWidth, imgHeight);
 
   currentIndex++;
+  
+  displayCounter++; // Increment the display counter (number of images on screen)
 
-  setTimeout(displayNextImage, 2000);
+  if (displayCounter >= 5) { // Check if it has been called 5 times
+    setTimeout(resetCanvas, 2000); // Reset the canvas after a delay of 2 seconds
+    displayCounter = 0; // Reset the display counter
+  } else {
+    setTimeout(displayNextImage, 2000);
+  }
 }
 
-function draw() {}
+function resetCanvas() {
+  background(22, 12, 41);
+  displayNextImage(); // Start displaying images again
+}
 
-function drawStar() {
+function draw() {
+countInterval = setInterval(drawStar, 2); // Draws little stars in the background at an interval
+}
+
+function drawStar() { //this will draw the stars randomly
   drawStarShape(random(0, windowWidth), random(0, windowHeight), 5, 4, 2, 0);
   counter++;
-  if (counter >= 2000) {
+  if (counter >= 150) {
     clearInterval(countInterval);
   }
 }
@@ -70,7 +84,7 @@ function windowResized() {
   background(22, 12, 41);
 }
 
-function drawStarShape(x, y, n, outerRadius, innerRadius, rotation) {
+function drawStarShape(x, y, n, outerRadius, innerRadius, rotation) { //this is just the formula to create a star shape
   noStroke();
   fill(190);
   let theta = TAU / n;
