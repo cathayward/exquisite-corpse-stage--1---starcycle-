@@ -30,10 +30,30 @@ Reimagine something from a Stage 4 sketch as a living entity or an environment.
 
 ### 🟥 Stage 1
 - Name/Alias: Cat Hayward
-- Github account:
-- Published webpage for stage 1:
+- Github account: https://github.com/cathayward
+- Published webpage for stage 1: https://cathayward.github.io/exquisite-corpse-stage--1---starcycle-/
 
-*... comments to be added here*
+**stage one:**
+Create a sketch that shows an unconventional representation of time. This 'clock' should be constantly changing, but its appearance can repeat in a subsequent cycle. It does not need to follow a 24-hour cycle (you can use any timescale). Give your sketch a unique title and edit the README file accordingly.
+
+in regards to the unconventional representation of time i wanted to explore the lifecycle of a star from birth to death.
+
+the cycle goes as follows:
+1. a nebulas - which is a cloud of gases and dust that is being condensed by gravity
+2. main sequence star - otherwise known as supermassive  and has a stable core - it then expands and gets hotter - 90% of its life time
+3. a red supergiant is then formed which has an unstable core and when that core implodes, collapses and bursts into a
+4. supernova - freeing all elements created in its lifetime
+5. what’s left of the star is a stellar black hole that has an intense gravitational pull
+
+- the idea is that i will code a sequence of images to change in accordance to the life cycle of a star perhaps over a background of everchanging stars in a galaxy
+- i ran into an issue when trying to make the sequence loop without deleting the background and the stars, i was also trying to figure out a way to delay the start of the star sequence without slowing down the gap currently between each star forming.
+- the idea is that the little stars will show up, and then the 5 larger images will show up in succession along the line, and then they will disappear and loop again.
+- after a lot of trial and error, i managed to find a way to achieve a similar result to what i was  initially looking for. 
+- i tried to use the createGraphics function but in the end it seemed to be a little too ahrd for my current abilities.
+- eventually i just decided to set up another counter that cleared the screen after 5 images showed up with a delay of two seconds, and then i put the star background into the draw function so it was always looping no matter what.
+- this created an everchanging backdrop of stars alongside the cycle of planets which i honestly prefer to my original idea.
+- i think this represents time due to the fact that stars can live for millions of years but they all follow a similar cycle no mattter what
+- it's just a different type of lifecycle and explores the cosmos beyond us
 
 ### 🟨 Stage 2
 - Name/Alias:
