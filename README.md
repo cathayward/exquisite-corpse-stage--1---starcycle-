@@ -1,5 +1,5 @@
 # Exquisite Corpse in Silico
-## 🔻 *starcycle)* 🔻
+## 🔻 *starcycle* 🔻
 
 This README file contains:
 - Briefs for each stage of the assignment
