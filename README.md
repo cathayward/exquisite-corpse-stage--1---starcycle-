@@ -45,15 +45,10 @@ the cycle goes as follows:
 4. supernova - freeing all elements created in its lifetime
 5. what’s left of the star is a stellar black hole that has an intense gravitational pull
 
-- the idea is that i will code a sequence of images to change in accordance to the life cycle of a star perhaps over a background of everchanging stars in a galaxy
-- i ran into an issue when trying to make the sequence loop without deleting the background and the stars, i was also trying to figure out a way to delay the start of the star sequence without slowing down the gap currently between each star forming.
-- the idea is that the little stars will show up, and then the 5 larger images will show up in succession along the line, and then they will disappear and loop again.
-- after a lot of trial and error, i managed to find a way to achieve a similar result to what i was  initially looking for. 
-- i tried to use the createGraphics function but in the end it seemed to be a little too ahrd for my current abilities.
-- eventually i just decided to set up another counter that cleared the screen after 5 images showed up with a delay of two seconds, and then i put the star background into the draw function so it was always looping no matter what.
-- this created an everchanging backdrop of stars alongside the cycle of planets which i honestly prefer to my original idea.
-- i think this represents time due to the fact that stars can live for millions of years but they all follow a similar cycle no mattter what
-- it's just a different type of lifecycle and explores the cosmos beyond us
+In what sense is a star’s lifecycle an ‘unconventional’ representation of time?
+The life cycle of a star is an unconventional representation of time because it takes millions, if not billions of years for a star to completely die off. A time frame completely unfathomable to the human mind. The scale is completely out of proportion to our human history, and some stars have lived much longer than humanity.
+
+Second, processes within a star, such as nuclear fusion in its core, occur at incredibly high temperatures and pressures. This leads to rapid changes and transformations over much shorter periods of time compared to the overall lifespan of the star. This rapid change in the core reminds me of a computing and coding environment. The complex interactions in the star's core that create emergent behaviors and phenomena can then be compared to the performance of machine learning and artificial intelligence algorithms. Just as stars evolve and exhibit different stages of their life cycle, artificial intelligence systems learn from data and experience to adapt and improve
 
 ### 🟨 Stage 2
 - Name/Alias:
